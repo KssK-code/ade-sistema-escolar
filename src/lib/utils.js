@@ -22,7 +22,7 @@ export function resolveBranchDisplayLabel() {
 
 export function getPublicCeevaLogoUrl() {
 	if (typeof window !== 'undefined' && window.location?.href) {
-		return new URL('/logo-cjvb.png', window.location.href).href;
+		return new URL('/logo.png', window.location.href).href;
 	}
-	return '/logo-cjvb.png';
+	return '/logo.png';
 }

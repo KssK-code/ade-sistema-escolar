@@ -251,7 +251,7 @@ function publicAssetUrl(path) {
 async function loadSystemLogo(pdf) {
   // Lista de posibles logos en orden de prioridad
   const possibleLogos = [
-    '/logo-cjvb.png',
+    '/logo.png',
     '/logo-polanco.png',
     '/logo-avanza.png', 
     '/avanza-logo.png.png',
