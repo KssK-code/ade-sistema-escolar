@@ -89,7 +89,7 @@ export async function downloadPaymentReceiptPDFAlternative(student, payment, sch
     pdf.setFont('helvetica', 'bold');
     const schoolTitle = import.meta.env.VITE_SCHOOL_NAME || 'Sistema Educativo';
     const branchTitle = typeof import.meta.env.VITE_BRANCH_NAME === 'string'
-      ? import.meta.env.VITE_BRANCH_NAME.trim()
+      ? (import.meta.env.VITE_BRANCH_NAME || '').trim()
       : '';
     const headerTitle = branchTitle ? `${schoolTitle} - ${branchTitle}` : schoolTitle;
     pdf.text(headerTitle, 105, startY, { align: 'center' });

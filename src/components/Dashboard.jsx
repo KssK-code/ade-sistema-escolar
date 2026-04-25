@@ -54,16 +54,14 @@ const Dashboard = ({ students, payments, schoolSettings }) => {
           <h1 className="text-3xl font-bold gradient-text mb-2">{resolveSchoolDisplayName(schoolSettings)} - Dashboard</h1>
           <p className="text-white/70">Sistema de Gestión Educativa - {resolveBranchDisplayLabel()}</p>
         </div>
-        {schoolSettings?.logo_url && (
-          <motion.img
-            src={schoolSettings.logo_url}
-            alt="Logo de la escuela"
-            className="h-20 w-20 object-contain"
-            initial={{ opacity: 0, scale: 0.5 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          />
-        )}
+        <motion.img
+          src="/logo.png"
+          alt="Logo de la escuela"
+          className="h-20 w-20 object-contain"
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+        />
       </motion.div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
