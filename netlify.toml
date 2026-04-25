@@ -5,7 +5,7 @@
 [build.environment]
   NODE_VERSION = "18"
   VITE_SUPABASE_URL = "https://mfyixymuukycdxuztfng.supabase.co"
-  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1meWl4eW11dWt5Y2R4dXp0Zm5nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwODcxNTYsImV4cCI6MjA5MjY2MzE1Nn0.LEsSKyix2Q8qES7iw0HX6JLz_M_CLVwkL9WlQPzGvMc"
+  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1meWl4eW11dWt5Y2R4dXp0Zm5nIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzcwODcxNTYsImV4cCI6MjA5MjY2MzE1Nn0.LEsSKyix2Q8qES7iw0HX6JLz_M_CLVwkL9WlQPzGvvc"
   VITE_SCHOOL_NAME = "Academia de Desarrollo y Emprendimiento"
 
 [[redirects]]
