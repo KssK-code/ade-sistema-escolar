@@ -17,7 +17,7 @@ export function resolveSchoolDisplayName(schoolSettings) {
 /** Ubicación o sucursal para encabezados y UI; prioriza Vite. */
 export function resolveBranchDisplayLabel() {
 	const v = import.meta.env.VITE_BRANCH_NAME;
-	return typeof v === 'string' && v.trim() ? v.trim() : 'Puebla, Puebla';
+	return typeof v === 'string' && v.trim() ? v.trim() : '';
 }
 
 export function getPublicCeevaLogoUrl() {
