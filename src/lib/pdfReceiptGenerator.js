@@ -87,12 +87,12 @@ export async function downloadPaymentReceiptPDFAlternative(student, payment, sch
     // Header con información completa de la escuela
     pdf.setFontSize(16);
     pdf.setFont('helvetica', 'bold');
-    pdf.text(
-      `${import.meta.env.VITE_SCHOOL_NAME} - ${import.meta.env.VITE_BRANCH_NAME}`,
-      105,
-      startY,
-      { align: 'center' }
-    );
+    const schoolTitle = import.meta.env.VITE_SCHOOL_NAME || 'Sistema Educativo';
+    const branchTitle = typeof import.meta.env.VITE_BRANCH_NAME === 'string'
+      ? import.meta.env.VITE_BRANCH_NAME.trim()
+      : '';
+    const headerTitle = branchTitle ? `${schoolTitle} - ${branchTitle}` : schoolTitle;
+    pdf.text(headerTitle, 105, startY, { align: 'center' });
     
     // Dirección y contacto
     pdf.setFontSize(9);
