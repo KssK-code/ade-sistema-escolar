@@ -55,9 +55,9 @@ const Sidebar = ({ activeSection, setActiveSection, schoolSettings, profile }) =
     >
       <div className="p-6 flex items-center space-x-4 border-b border-slate-700/50">
         <img
-          src={schoolSettings?.logo_url || '/logo.png'}
-          alt={resolveSchoolDisplayName(schoolSettings)}
-          className="h-12 w-12 rounded-full object-cover bg-white/10"
+          src="/logo.png"
+          alt="Logo"
+          style={{width: '140px', height: 'auto', objectFit: 'contain'}}
         />
         <div>
           <p className="font-semibold text-lg">{resolveSchoolDisplayName(schoolSettings)}</p>
